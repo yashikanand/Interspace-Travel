@@ -1,0 +1,161 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Helvetica Neue';
+}
+
+:root {
+  --brand-color: black;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  outline: 1px solid black;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+header .top-bar {
+  display: flex;
+  background-color: var(--brand-color);
+  justify-content: space-between;
+}
+
+header .top-bar .logo {
+  flex: 0 1 10vw;
+  text-align: center;
+}
+
+header .top-bar .logo img {
+  width: 200px
+}
+
+header .top-bar .links {
+  display: flex;
+  flex: 0 1 20vw;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header .top-bar .links button {
+  background-color: white;
+  border: none;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+main {
+  background-color: white;
+  margin: 0;
+  padding: 0 7% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+main .nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 10px;
+  background-color: #111111;
+  color: white;
+  font-size: 25px;
+  box-shadow: 0px 2px 7px lightcyan;
+  border-radius: 3px;
+}
+
+main .nav-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+main .nav-bar .dropdown {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+main .nav-bar .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #111111;
+  width: 150px;
+  z-index: 1;
+}
+
+main .nav-bar .dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+main .nav-bar .dropdown:hover .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+}
+
+main .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .gallery img {
+    flex: 0 1; 
+    margin: 2.4%;
+    width: 28.5%;
+    height: 270px;
+    justify-content: space-around;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--brand-color);
+  color: white;
+  padding: 20px;
+}
+
+footer .footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 0 1 100%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .heading {
+  flex: 0 1 100%;
+  font-size: 25px;
+  text-align: center;
+  padding: 30px;
+}
+
+footer .links {
+  display: flex;
+  flex: 0 1 100%;
+  justify-content: space-evenly;
+  font-size: 15px;
+  padding: 10px;
+}
